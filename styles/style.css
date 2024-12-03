@@ -1,0 +1,701 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: all .2s;
+}
+
+:root {
+    --main-blue: #4bcaff;
+    --main-blue_transparent: #4bc9ffb6;
+    --nav-color: #272d30a8;
+    --color1: #515f67;
+    --color2: #353F46;
+}
+
+button {
+    cursor: pointer;
+}
+
+/*HEADER*/
+
+#header {
+    background-color: var(--nav-color);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    padding: 50px 0;
+    position: fixed;
+    width: 100dvw;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+
+#logo_blue {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#logo_blue span {
+    color: var(--main-blue);
+}
+
+#nav_options {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav_option {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    padding: 5px 10px;
+    font-weight: bold;
+    transition: all .2s ease;
+}
+
+.nav_option:hover {
+    color: var(--main-blue);
+    border: 1px solid var(--main-blue);
+}
+
+/*SECTION1*/
+
+#sectionOne {
+    background: url('../assets/images/Fondo.png') center center no-repeat;
+    background-size: cover;
+    height: 96dvh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionOne_container {
+    display: grid;
+    gap: 5px;
+    justify-items: center;
+}
+
+#sectionOne .sectionOne_text {
+    background-color: var(--nav-color);
+    font-size: 40px;
+    width: fit-content;
+    padding: 2px 5px;
+    color: white;
+}
+
+/* SECTION2*/
+
+#sectionTwo {
+    background-color: var(--main-blue);
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: end;
+    padding: 100px 0 70px 0;
+    height: fit-content;
+    justify-content: center;
+    gap: 40px;
+}
+
+.icon {
+    display: grid;
+    max-width: 200px;
+    min-width: none;
+    font-size: 11px;
+    color: white;
+}
+
+/*SECTION3*/
+
+#sectionThree {
+    display: grid;
+    justify-self: center;
+    justify-items: center;
+    width: 70%;
+    padding: 0 0 70px 0;
+}
+
+.header_port {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-content: center;
+    gap: 100%;
+    padding: 70px 0;
+}
+
+.title_port {
+    display: grid;
+    font-weight: lighter;
+}
+
+#sectionThree .separation {
+    border: 1px solid black;
+    width: 55px;
+}
+
+.nav_port {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 15px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.sections_port {
+    padding: 5px 10px;
+	text-decoration: none;
+	color: black;
+}
+
+.sections_port:hover {
+    color: var(--main-blue);
+    border: 1px solid var(--main-blue);
+}
+
+.port_imgs {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, auto);
+    gap: 10px;
+}
+
+/*SECTION4*/
+
+#sectionFour {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--color1);
+    padding: 50px 0;
+}
+
+.default {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    height: fit-content;
+    justify-content: center;
+    align-self: center;
+    gap: 10px;
+    color: white;
+    width: fit-content;
+    justify-self: center;
+}
+
+.title_default {
+    display: grid;
+    font-weight: lighter;
+}
+
+.separation {
+    border: 1px solid white;
+    width: 55px;
+}
+
+.text_default {
+    width: 370px;
+    font-size: 15px;
+    height: fit-content;
+}
+
+.text_default:nth-child(3) {
+    width: 340px;
+}
+
+.btn_default {
+    width: fit-content;
+    height: fit-content;
+    font-size: 10px;
+    background-color: transparent;
+    border: 2px solid var(--color2);
+    padding: 10px 30px;
+    color: var(--color2);
+    font-weight: bold;
+}
+
+.btn_default:hover {
+    border: 2px solid var(--main-blue);
+    color: var(--main-blue);
+}
+
+/*SECTION5*/
+
+#sectionFive {
+    background-color: var(--main-blue);
+    color: white;
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0;
+}
+
+.header_twitter {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 100%;
+}
+
+.header_twitter .header_twit {
+    display: grid;
+    font-weight: lighter;
+}
+
+.header_twitter .separation {
+    border: 1px solid white;
+    width: 55px;
+}
+
+.text_twitter {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 100%;
+}
+
+.info_twitter {
+    width: 800px;
+    font-size: 20px;
+}
+
+#email {
+    font-weight: bold;
+}
+
+/* SECTION 6*/
+
+#sectionSix {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: url('../assets/images/bg_whoIs.png') center center no-repeat;
+    background-size: cover;
+    color: white;
+    align-items: end;
+    padding: 100px 0 200px 0;
+    gap: 20px;
+}
+
+.header_john {
+    display: grid;
+    justify-items: end;
+    gap: 20px;
+}
+
+.john_desc {
+    display: grid;
+    gap: 20px;
+}
+
+.john_desc .redes_icons {
+    display: grid;
+    gap: 20px;
+    width: fit-content;
+    grid-template-columns: repeat(4, auto);
+}
+
+.john_desc .red_icon {
+    width: 50px;
+}
+
+.header_john .separation {
+    border: 1px solid white;
+    width: 55px;
+}
+
+.desc_john {
+    width: 400px;
+    font-size: 10px;
+    line-height: 20px;
+}
+
+/*SECTION7*/
+
+#sectionSeven {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    color: var(--color1);
+	padding: 50px 0;
+}
+
+.header_test {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 620px;
+    justify-content: center;
+    width: fit-content;
+    justify-self: center;
+}
+
+.header_test .separation {
+    border: 1px solid var(--color1);
+    width: 55px;
+    height: fit-content;
+}
+
+.header_test h2 {
+    height: fit-content;
+}
+
+.container_test {
+    display: grid;
+    justify-self: center;
+    width: fit-content;
+    gap: 15px;
+    padding: 0 0 20px 0;
+}
+
+.test_text {
+    width: 820px;
+    font-size: 21px;
+}
+
+.author {
+    font-size: 12px;
+    color: var(--main-blue);
+}
+
+/*SECTION8*/
+
+#sectionEight {
+    background: url('../assets/images/bg_contact.png') center center no-repeat;
+    background-size: cover;
+}
+
+.header_form {
+    display: grid;
+    justify-items: flex-start;
+    padding: 40px 0;
+    gap: 20px;
+    width: fit-content;
+    justify-self: center;
+}
+
+.header_form h2 {
+    color: white;
+}
+
+.header_form .separation {
+    width: 55px;
+    border: 1px solid white;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: fit-content;
+}
+
+.inputs_form {
+    display: grid;
+    grid-template-columns: auto;
+    width: fit-content;
+    justify-items: flex-start;
+    justify-self: start;
+    align-content: center;
+    gap: 20px;
+}
+
+.info_form {
+    display: grid;
+    gap: 3px;
+}
+
+.form_info {
+    width: 300px;
+    height: 40px;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 0 0 0 5px;
+}
+
+.label_form {
+    color: white;
+    font-size: 12px;
+}
+
+.text_form {
+    display: grid;
+    gap: 20px;
+}
+
+.txt_form {
+    width: 400px;
+    font-size: 13px;
+    color: white;
+}
+
+.container_message {
+    display: grid;
+    gap: 20px;
+    width: fit-content;
+    justify-self: center;
+}
+
+.message_textArea {
+    resize: none;
+    min-width: 800px;
+    min-height: 200px;
+    background: transparent;
+    outline: none;
+    border: 2px solid white;
+    padding: 5px;
+    color: white;
+}
+
+.contact_btn {
+    display: grid;
+    justify-self: flex-start;
+    padding: 12px 60px;
+    color: white;
+    background-color: var(--main-blue);
+    border: none;
+    outline: none;
+}
+
+.contact_btn:active {
+    background-color: var(--main-blue_transparent);
+}
+
+/*FOOTER*/
+
+#footer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 70%;
+    padding: 50px 70px;
+    background-color: var(--color2);
+    color: var(--color1);
+    font-size: 12px;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    width: fit-content;
+    align-items: center;
+    gap: 10px;
+}
+
+.links_footer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+}
+
+.links_footer:hover {
+    color: var(--main-blue);
+}
+
+.cont_footer {
+    display: grid;
+    justify-self: flex-end;
+    width: fit-content;
+}
+
+
+@media screen and (max-width: 1434px) {
+    #sectionThree .port_imgs {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    #sectionThree {
+        justify-content: center;
+    }
+    .header_port {
+        grid-template-columns: auto;
+        gap: 0;
+        align-self: center;
+    }
+    .port_imgs {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+    #sectionFive {
+        text-align: center;
+		justify-items: center;
+    }
+}
+
+@media screen and (max-width: 935px) {
+    #sectionTwo {
+        grid-template-columns: repeat(2, auto);
+        padding: 60px 0 50px 0;
+    }
+    #sectionFour {
+        grid-template-columns: auto;
+        justify-content: center;
+        gap: 20px;
+    }
+    #footer {
+        padding: 50px 10px;
+        gap: 300px;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    #header {
+        padding: 30px 0;
+    }
+
+    .sectionOne_text{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .default {
+        justify-items: center;
+    } 
+
+    .text_default {
+        text-align: center;
+    }
+
+    .info_twitter {
+        font-size: 15px;
+        width: 600px;
+    }
+
+    #sectionSix {
+        grid-template-columns: auto;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header_john .separation {
+        justify-self: flex-start;
+    }
+
+    .redes_icons {
+        justify-self: center;
+    }
+
+    #sectionSeven {
+        text-align: center;
+    }
+
+    .header_test {
+        gap: 300px;
+    }
+
+    .test_text {
+        font-size: 15px;
+        width: 450px;
+    }
+
+    .form {
+        grid-template-columns: auto;
+        text-align: center;
+        gap: 20px;
+		justify-self: center;
+    }
+
+    .inputs_form {
+        gap: 0;
+        justify-self: center;
+    }
+
+    .message_textArea {
+        min-width: 600px;
+    }
+
+	#footer{
+		grid-template-columns: auto;
+		gap: 10px;
+		justify-content: flex-start;
+	}
+}
+
+@media screen and (max-width: 625px) {
+    .sectionOne_text {
+        font-size: 25px;
+    }
+    .info_twitter {
+        font-size: 15px;
+        width: 400px;
+    }
+    .message_textArea {
+        min-width: 400px;
+        min-height: 150px;
+    }
+    #footer {
+        grid-template-columns: auto;
+        gap: 15px;
+        justify-items: center;
+        justify-content: center;
+    }
+    .cont_footer {
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    #header {
+        padding: 10px 0;
+        align-items: center;
+    }
+    #nav_options {
+        grid-template-columns: repeat(2, auto);
+        gap: 8px;
+    }
+    #sectionFour .img_vimeo {
+        width: 400px;
+    }
+    #sectionThree .imgs_port {
+        width: 200px;
+    }
+    #sectionSeven .header_test {
+        gap: 150px;
+    }
+    #sectionSeven .test_text {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    #sectionThree .portfolio-nav {
+        grid-template-columns: repeat(3, auto);
+        gap: 15px;
+    }
+    #sectionThree .imgs_port {
+        width: 130px;
+    }
+    #sectionSix .desc_john {
+        width: 350px;
+    }
+    #sectionFour .text_default {
+        width: 350px;
+    }
+    #sectionFour .def_video {
+        display: grid;
+        width: fit-content;
+        justify-self: center;
+    }
+    #sectionFour .img_vimeo {
+        width: 350px;
+    }
+    #sectionFive .info_twitter {
+        width: 350px;
+    }
+    #sectionEight .contact_btn {
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 401px) {
+    #sectionTwo {
+        grid-template-columns: auto;
+    }
+    #sectionEight .txt_form {
+        width: 350px;
+    }
+    #sectionEight .message_textArea {
+        min-width: 300px;
+        min-height: 100px;
+    }
